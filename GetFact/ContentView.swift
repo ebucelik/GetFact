@@ -16,11 +16,18 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
-    }
-}
+        .onAppear {
+            Task {
+                do {
+                    let factService = FactService()
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+                    let fact = try await factService.getRandomFact()
+
+                    print("RESPONSE: \(fact)")
+                } catch {
+                    print("ERROR: \(error.localizedDescription)")
+                }
+            }
+        }
     }
 }

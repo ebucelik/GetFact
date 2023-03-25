@@ -11,6 +11,14 @@
 		714A0A0929CE6D22003DC980 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714A0A0829CE6D22003DC980 /* ContentView.swift */; };
 		714A0A0B29CE6D23003DC980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714A0A0A29CE6D23003DC980 /* Assets.xcassets */; };
 		714A0A0E29CE6D23003DC980 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714A0A0D29CE6D23003DC980 /* Preview Assets.xcassets */; };
+		714A0A1729CE70B0003DC980 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714A0A1629CE70B0003DC980 /* Call.swift */; };
+		714A0A1929CE70DB003DC980 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714A0A1829CE70DB003DC980 /* HTTPMethod.swift */; };
+		714A0A1B29CE7449003DC980 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714A0A1A29CE7449003DC980 /* HTTPError.swift */; };
+		714A0A1D29CE7526003DC980 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714A0A1C29CE7526003DC980 /* APIClient.swift */; };
+		714A0A2029CE7A93003DC980 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714A0A1F29CE7A93003DC980 /* Fact.swift */; };
+		714A0A2229CE7AFC003DC980 /* FactServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714A0A2129CE7AFC003DC980 /* FactServiceProtocol.swift */; };
+		714A0A2429CE7B5C003DC980 /* FactCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714A0A2329CE7B5C003DC980 /* FactCall.swift */; };
+		714A0A2629CE7B8B003DC980 /* FactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714A0A2529CE7B8B003DC980 /* FactService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		714A0A0829CE6D22003DC980 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		714A0A0A29CE6D23003DC980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		714A0A0D29CE6D23003DC980 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		714A0A1629CE70B0003DC980 /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		714A0A1829CE70DB003DC980 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		714A0A1A29CE7449003DC980 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		714A0A1C29CE7526003DC980 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		714A0A1F29CE7A93003DC980 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		714A0A2129CE7AFC003DC980 /* FactServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactServiceProtocol.swift; sourceTree = "<group>"; };
+		714A0A2329CE7B5C003DC980 /* FactCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCall.swift; sourceTree = "<group>"; };
+		714A0A2529CE7B8B003DC980 /* FactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,9 @@
 		714A0A0529CE6D22003DC980 /* GetFact */ = {
 			isa = PBXGroup;
 			children = (
+				714A0A1E29CE7A28003DC980 /* Service */,
+				714A0A1529CE6E9D003DC980 /* Model */,
+				714A0A1429CE6D98003DC980 /* Network */,
 				714A0A0629CE6D22003DC980 /* GetFactApp.swift */,
 				714A0A0829CE6D22003DC980 /* ContentView.swift */,
 				714A0A0A29CE6D23003DC980 /* Assets.xcassets */,
@@ -65,6 +84,35 @@
 				714A0A0D29CE6D23003DC980 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		714A0A1429CE6D98003DC980 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				714A0A1629CE70B0003DC980 /* Call.swift */,
+				714A0A1829CE70DB003DC980 /* HTTPMethod.swift */,
+				714A0A1A29CE7449003DC980 /* HTTPError.swift */,
+				714A0A1C29CE7526003DC980 /* APIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		714A0A1529CE6E9D003DC980 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				714A0A1F29CE7A93003DC980 /* Fact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		714A0A1E29CE7A28003DC980 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				714A0A2129CE7AFC003DC980 /* FactServiceProtocol.swift */,
+				714A0A2329CE7B5C003DC980 /* FactCall.swift */,
+				714A0A2529CE7B8B003DC980 /* FactService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +185,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714A0A1929CE70DB003DC980 /* HTTPMethod.swift in Sources */,
+				714A0A2629CE7B8B003DC980 /* FactService.swift in Sources */,
 				714A0A0929CE6D22003DC980 /* ContentView.swift in Sources */,
+				714A0A1729CE70B0003DC980 /* Call.swift in Sources */,
+				714A0A2429CE7B5C003DC980 /* FactCall.swift in Sources */,
+				714A0A1B29CE7449003DC980 /* HTTPError.swift in Sources */,
+				714A0A2029CE7A93003DC980 /* Fact.swift in Sources */,
+				714A0A2229CE7AFC003DC980 /* FactServiceProtocol.swift in Sources */,
 				714A0A0729CE6D22003DC980 /* GetFactApp.swift in Sources */,
+				714A0A1D29CE7526003DC980 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
